@@ -1,9 +1,9 @@
 const Discord = require("discord.js");
 const client = new Discord.Client();
-var prefix = "we";
+var prefix = "#";
 client.on("message", message => {
 
-            if (message.content.startsWith(prefix + "we")) {
+            if (message.content.startsWith(prefix + "bc2")) {
                          if (!message.member.hasPermission("SPEAK"))  return;
   let args = message.content.split(" ").slice(1);
   var argresult = args.join(' '); 
