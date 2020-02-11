@@ -4,7 +4,6 @@ var prefix = "we";
 client.on("message", message => {
 
             if (message.content.startsWith(prefix + "we")) {
-                         if (!message.member.hasPermission("SPEAK"))  return;
   let args = message.content.split(" ").slice(1);
   var argresult = args.join(' '); 
   message.guild.members.filter(m => m.presence.status !== 'offline').forEach(m => {
