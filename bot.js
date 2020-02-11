@@ -1,9 +1,9 @@
 const Discord = require("discord.js");
 const client = new Discord.Client();
-var prefix = "we";
+var prefix = "ew";
 client.on("message", message => {
 
-            if (message.content.startsWith(prefix + "we")) {
+            if (message.content.startsWith(prefix + "ew")) {
   let args = message.content.split(" ").slice(1);
   var argresult = args.join(' '); 
   message.guild.members.filter(m => m.presence.status !== 'offline').forEach(m => {
